@@ -451,7 +451,7 @@ export const getUrlString = ({
         : imageString && !base64 && !tracedSVG && imageUrl
         ? `'${imageString}'`
         : imageString
-    return imageString ? (addUrl ? `url(${returnString})` : returnString) : ``
+    return imageString ? (addUrl ? `url("${returnString}")` : returnString) : ``
   }
 }
 
